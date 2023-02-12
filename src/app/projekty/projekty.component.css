@@ -1,0 +1,51 @@
+.footer{
+  background: #3f1682;
+  color: #fff;
+  text-align: center;
+  border-radius: 0;
+}
+#container{
+  margin: 0 20%;
+}
+
+img{
+  margin:0 auto;
+  display:block;
+  margin-bottom: 5%;
+}
+#tekst{
+  color: #6610f2;
+}
+#tekst  h2{
+  font-weight: 400;
+  text-align: center;
+}
+#tekst > a > img{
+  width: 100%;
+  display: block;
+  margin-bottom: 3%;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #3a088b;
+}
+/* DLA MNIEJSZYCH MONITORÓW */
+
+@media only screen and (max-width: 1600px) {
+  #container{
+    margin: 0 10%;
+  }
+ img {
+    width: 100%;
+    display: block;
+    margin-bottom: 3%;
+  }
+}
+
+@media only screen and (max-width: 1205px) {
+  #container{
+    margin: 0 3%;
+  }
+}

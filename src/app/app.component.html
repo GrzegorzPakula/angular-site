@@ -1,0 +1,27 @@
+<app-main-nav>
+    <mat-card-content class="zdj">
+
+      <div id="header">
+        <div id="wrapper">
+          <div id="tekst_duzy">
+            <p>Witamy na stronie kółka programistycznego, którego opiekunem jest mgr inż. Łukasz Bryk.</p>
+          </div>
+          <div id="maly_tekst">
+            <p>Ludzie sądzą, że informatyka to sztuka dla geniuszy, ale w rzeczywistości jest zupełnie odwrotnie. To praca wielu zwykłych ludzi, którzy razem tworzą coś większego, jak mur zbudowany z wielu małych kamieni. - Donald Knuth</p>
+          </div>
+          <div id="header_button">
+              <a href="#korzysci">Poznaj Nas</a>
+            </div>
+          <div id="header_img">
+            <img src="assets/img/header/headerImage.png" />
+          </div>
+        </div>
+      </div>
+
+      <main [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+        <router-outlet #o="outlet"></router-outlet>
+      </main>
+
+    </mat-card-content>
+</app-main-nav>
+

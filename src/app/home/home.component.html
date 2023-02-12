@@ -1,0 +1,96 @@
+<div id="wrapper">
+  <div id="korzysci">
+    <h2>Korzyści</h2>
+    <div id="korzysci_left">
+      <div id="korzysci_okieno">
+        <img src="assets/img/korzysci/users-1.png" /><br />
+        <h2>Nowe znajomości</h2>
+      </div>
+      <div id="korzysci_okieno">
+        <img src="assets/img/korzysci/command.png" /><br />
+        <h2>Nowe doświadczenia</h2>
+      </div>
+      <div id="korzysci_okieno">
+        <img src="assets/img/korzysci/gift.png" /><br />
+        <h2>Konkursy</h2>
+      </div>
+      <div id="korzysci_okieno">
+        <img src="assets/img/korzysci/notebook-4.png" /><br />
+        <h2>Wiedza</h2>
+      </div>
+    </div>
+    <div id="korzysci_right">
+      <img src="assets/img/korzysci/brain.png" />
+    </div>
+  </div>
+  <div id="o_nas">
+    <h2>O Nas</h2>
+    <div id="o_nasleft">
+      <!-- Tabelka normalna -->
+      <table>
+          <tbody>
+            <tr>
+              <td><img src="assets/img/onas/nativescript.png" /></td>
+              <td></td>
+              <td><img src="assets/img/onas/angular.png" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><img src="assets/img/onas/js.png" /></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><img src="assets/img/onas/flutter.png" /></td>
+              <td></td>
+              <td><img src="assets/img/onas/csharp.png" /></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <div id="o_nasleft_m">
+        <!-- Tabelka mobilna -->
+        <table>
+            <tbody>
+            <tr>
+            <td><img src="assets/img/onas/nativescript.png" /></td>
+            <td><img src="assets/img/onas/angular.png" /></td>
+            <td><img src="assets/img/onas/js.png" /></td>
+            <td><img src="assets/img/onas/flutter.png" /></td>
+            <td><img src="assets/img/onas/csharp.png" /></td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+    <div id="o_nasright">
+      <h2>Na naszych zajęciach tworzymy programy komputerowe jak i aplikacje na telefon dla systemów Android oraz IOS. Wykorzystujemy do tego różne języki programowania wysokiego poziomu. Między innymi używamy takich języków jak: C++, C#, Java, Dart, Php i JavaScript. Do tworzenia naszego oprogramowania używamy również framework’ów, które pomagają budowanie aplikacji. Przykładowymi framework’ami, z których korzystamy są: Angular, NativeScript oraz Flutter. Nasi uczniowie biorą również udział w różnych konkursach programistycznych. Jednym z nich jest Ogólnopolski Konkurs Programistyczny Hack Heroes. Bierzemy również udział w eventach GDG Radzymin.</h2>
+    </div>
+  </div>
+  <div id="projekty">
+    <h2>Projekty</h2>
+    <!-- Lightbox normalny -->
+    <div id="lightbox">
+      <table>
+        <tbody>
+          <tr>
+            <td *ngFor="let image of album; let i=index">
+              <img [src]="image.thumb" (click)="open(i)" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Lightbox mobilny -->
+    <div id="lightbox_m">
+      <table>
+        <tbody>
+          <tr *ngFor="let image of album; let i=index">
+            <td>
+              <img [src]="image.thumb" (click)="open(i)" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  </div>
+</div>
+<mat-card class="footer">Copyright © 2019, Grzegorz Pakuła, Cezary Śliwiński, Daniel Michalak</mat-card>

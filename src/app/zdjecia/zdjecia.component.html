@@ -1,0 +1,15 @@
+<div id="container">
+  <!-- Lightbox normalny -->
+<div id="lightbox">
+  <table>
+    <tbody>
+      <tr>
+        <td *ngFor="let image of images; let i=index">
+          <img [src]="image.thumb" (click)="open(i)" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<mat-card class="footer">Copyright © 2019, Grzegorz Pakuła, Cezary Śliwiński, Daniel Michalak</mat-card>
